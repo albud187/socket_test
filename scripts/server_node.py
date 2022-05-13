@@ -1,12 +1,22 @@
 #!/usr/bin/env python
 #_*_ coding: utf8 _*_
-#server should be on linux machine to get info from optitrack
 import socket
+import rospy
+
+#message imports
+from geometry_msgs.msg import Vector3
+
+#subscribed topics
+
+#published topics
+TP_QC_PTN = "/cmd_vel"
+
+#global variables
+qc_position = Vector3()
 
 def Main():
-    host = "127.0.0.1"
+    host = "10.0.0.37"
     port = 1236
-
     print(socket.gethostname())
 
     mySocket = socket.socket()
@@ -27,6 +37,6 @@ def Main():
 
     conn.close()
 
-# if __name__ == '__main__':
-#     Main()
 Main()
+
+#main loop

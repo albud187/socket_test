@@ -1,0 +1,6 @@
+#linux commands
+sudo ufw disable
+sudo ufw enable
+
+host machine ip: 10.0.0.221
+geust machine ip: 10.0.0.37

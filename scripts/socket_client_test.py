@@ -1,7 +1,5 @@
-#!/usr/bin/env python
-#_*_ coding: utf8 _*_
-
 import socket
+#client should be on optitrack machine
 def Main():
         host = "127.0.0.1"
         port = 5000
