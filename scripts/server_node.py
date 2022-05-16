@@ -15,7 +15,8 @@ TP_QC_PTN = "/pos_vect"
 qc_position = Vector3()
 
 #constants
-HOST =  "10.0.0.37"
+#HOST =  "10.0.0.37"
+HOST = "192.168.152.177"
 PORT = 1236
 
 
