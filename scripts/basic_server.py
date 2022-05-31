@@ -16,7 +16,9 @@ qc_position = Vector3()
 
 #constants
 #HOST =  "10.0.0.37"
-HOST = "192.168.152.177"
+#HOST = "192.168.152.177"
+HOST = "10.193.1.15"
+
 PORT = 1236
 
 
@@ -62,9 +64,13 @@ def server_node():
 
     while not rospy.is_shutdown():
         data = conn.recv(1024).decode()
-        handle_data(data)
-        print(qc_position)
-        vect_pub.publish(qc_position)
+        print(data)
+        print("")
+        # try:
+        #     data_dict = json.loads(data)
+        #     print(data_dict)
+        # except:
+        #     print("data cannot be converted")
 
 
 if __name__ == '__main__':
