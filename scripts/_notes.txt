@@ -1,0 +1,16 @@
+#linux commands
+sudo ufw disable
+sudo ufw enable
+
+IP_DATA_RECEIVER
+
+IP_DATA_SENDER
+
+
+1 - uottawa computer: connect to guOttawa
+2 - uottawa computer: enable mobile hotspot
+3 - personal computer: connect to mobile
+
+port = 1236
+personal computer VM IP = 192.168.137.110
+uo computer VM IP = 10.193.5.146

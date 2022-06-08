@@ -1,0 +1,19 @@
+<launch>
+
+    <node
+      name="reciever"
+      pkg="socket_test"
+      type="reciever.py"
+      output="screen"
+      launch-prefix ="xterm -e">
+    </node>
+
+    <node
+      name="sender"
+      pkg="socket_test"
+      type="sender.py"
+      output="screen"
+      launch-prefix ="xterm -e">
+    </node>
+
+</launch>
