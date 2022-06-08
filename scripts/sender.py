@@ -29,14 +29,12 @@ HOST = IP_INFO["HOST"]
 PORT = IP_INFO["PORT"]
 
 def sender_node():
-    print(socket.gethostname())
-    mySocket = socket.socket()
-    mySocket.connect((HOST,PORT))
-    mySocket.listen(100)
-    conn, addr = mySocket.accept()
-    print("connection from: " + str(addr))
-
     rospy.init_node("server_node", anonymous = False)
+    mySocket = socket.socket()
+    print(HOST)
+    mySocket.connect((HOST,PORT))
+    print("connected")
+    
 
     message = input(" -> ")
     while not rospy.is_shutdown():
