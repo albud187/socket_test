@@ -1,0 +1,31 @@
+Step 1: basic 2 way communications between 2 seperate computers
+
+1 - create generic_server.ipynb
+2 - create generic_client.ipynb
+3 - run both programs on 2 computers
+
+computer 1 will run C1_generic_server.ipynb and C2_generic_client.ipynb
+computer 2 will run C2_generic_server.ipynb and C2_generic_client.ipynb
+
+Step 2: basic 2 way communications between 3 seperate computers
+
+1 - create generic_server.ipynb
+2 - create generic_client.ipynb
+3 - run both programs on 3 computers
+
+computer 1 will run C1_generic_server.ipynb and C2_generic_client.ipynb
+computer 2 will run C2_generic_server.ipynb and C2_generic_client.ipynb
+computer 3 will run C3_generic_server.ipynb and C3_generic_client.ipynb
+
+C1 will send to C2 and C3. C2 will only send to C3. C3 will only send to C1.
+goal: test variable 2 way communications
+
+Step 3: scale 2 way communications up to N agents
+
+1 - modify generic_server.ipynb and generic_client.ipynb
+2 - use lists of IPs and ports in system
+list will be "host IP": [allowed_IP_1, allowed_IP_2, ...]
+3 - each agent must be able to act as its own server and client in network
+
+step 4: build resilience and robustness
+- what happens if an agent drops from network?

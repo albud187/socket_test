@@ -14,3 +14,4 @@ IP_DATA_SENDER
 port = 1236
 personal computer VM IP = 192.168.137.110
 uo computer VM IP = 10.193.5.146
+uo computer IP = 192.168.137.110
