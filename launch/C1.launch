@@ -13,6 +13,7 @@
       pkg="socket_test"
       type="C1_client.py"
       output="screen"
+      respawn="true"
       launch-prefix ="xterm -e">
     </node>
 
