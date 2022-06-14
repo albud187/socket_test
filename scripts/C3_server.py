@@ -18,7 +18,7 @@ ServerSideSocket = socket.socket()
 ThreadCount = 0
 
 #constants
-HOST = "192.168.137.178"
+HOST = "10.193.5.146"
 PORT = 1236
 
 #functions
