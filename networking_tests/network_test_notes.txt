@@ -1,0 +1,6 @@
+uottawa computer connected to guOttawa
+uottawa computer sets up hotspot
+personal computer connects to hotspot
+C1 = personal VM
+C2 = personal host
+C3 = uottawa VM
