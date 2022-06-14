@@ -14,25 +14,27 @@ from geometry_msgs.msg import Vector3
 
 #constants
 
-HOST = "10.0.0.221"
+HOST = "10.0.0.37"
 PORT = 1236
 
-def C2_client():
-    rospy.init_node("C2_client", anonymous = False)
-    mySocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    mySocket.connect((HOST,PORT))
+def C1_server():
 
-    message = input(" -> ")
+    print(socket.gethostname())
+    mySocket = socket.socket()
+    mySocket.bind((HOST,PORT))
+    mySocket.listen(1)
+    conn, addr = mySocket.accept()
+    rospy.init_node("C1_server", anonymous = False)
 
     while not rospy.is_shutdown():
 
-        mySocket.send(message.encode())
-
-        message = input(" -> ")
+        data = conn.recv(1024).decode()
+        print(data)
+    conn.close()
 
 if __name__ == '__main__':
     try:
-        C2_client()
+        C1_server()
     except rospy.ROSInterruptException:
         pass
 

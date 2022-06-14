@@ -17,7 +17,7 @@ target_position = Vector3()
 #constants
 #HOST =  "10.0.0.37"
 #HOST = "192.168.152.177"
-HOST = "192.168.137.110"
+HOST = "192.168.137.178"
 
 PORT = 1236
 

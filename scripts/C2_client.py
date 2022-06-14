@@ -12,6 +12,7 @@ from geometry_msgs.msg import Vector3
 
 #global variables
 
+
 #constants
 
 HOST = "10.0.0.221"
@@ -24,11 +25,15 @@ def C2_client():
 
     message = input(" -> ")
 
+
+
     while not rospy.is_shutdown():
 
         mySocket.send(message.encode())
 
         message = input(" -> ")
+
+
 
 if __name__ == '__main__':
     try:

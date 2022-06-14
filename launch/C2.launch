@@ -1,0 +1,20 @@
+<launch>
+
+    <node
+      name="C2_server"
+      pkg="socket_test"
+      type="C2_server.py"
+      output="screen"
+      launch-prefix ="xterm -e">
+    </node>
+
+    <node
+      name="C2_client"
+      pkg="socket_test"
+      type="C2_client.py"
+      output="screen"
+      respawn="true"
+      launch-prefix ="xterm -e">
+    </node>
+
+</launch>
